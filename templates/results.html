@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Results</title>
+
+</head>
+<body style="background-color:#91a3b0;">
+    <div class="gameresults">
+        <h2>Computer choose {{ comp_choice }}</h2>
+        <h2>{{ res }} by choosing <b>{{ user_choice }}</b></h2>
+
+
+    </div>
+    <div>
+        <form class="gamebtn" action="{{ url_for('home_page') }}" method="post">
+        <button class="resetbtn" type="submit" value="Play Again">Play Again</button>
+        </form>
+    </div>
+</body>
+</html>
